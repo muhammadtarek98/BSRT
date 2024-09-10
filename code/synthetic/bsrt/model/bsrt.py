@@ -2,24 +2,24 @@ import functools
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import model.arch_util as arch_util
+import BSRT.code.synthetic.bsrt.model.arch_util as arch_util
 from torch.cuda.amp import autocast
-import model.swin_util as swu
+import BSRT.code.synthetic.bsrt.model.swin_util as swu
 import time
 import os
 import math
-from utils.debayer import Debayer3x3
+from BSRT.code.synthetic.bsrt.utils.debayer import Debayer3x3
 import torchvision.utils as tvutils
-from datasets.burstsr_dataset import pack_raw_image, flatten_raw_image_batch
+from BSRT.code.synthetic.bsrt.datasets.burstsr_dataset import pack_raw_image, flatten_raw_image_batch
 
 try:
-    from model.non_local.non_local_cross_dot_product import NONLocalBlock2D as NonLocalCross
-    from model.non_local.non_local_dot_product import NONLocalBlock2D as NonLocal
+    from BSRT.code.synthetic.bsrt.model.non_local.non_local_cross_dot_product import NONLocalBlock2D as NonLocalCross
+    from BSRT.code.synthetic.bsrt.model.non_local.non_local_dot_product import NONLocalBlock2D as NonLocal
 except ImportError:
     raise ImportError('Failed to import Non_Local module.')
 
 try:
-    from model.DCNv2.dcn_v2 import DCN_sep as DCN, FlowGuidedDCN, InsideFlowGuidedDCN
+    from BSRT.code.synthetic.bsrt.model.DCNv2.dcn_v2 import DCN_sep as DCN, FlowGuidedDCN, InsideFlowGuidedDCN
 except ImportError:
     raise ImportError('Failed to import DCNv2 module.')
 

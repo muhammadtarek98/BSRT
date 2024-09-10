@@ -9,7 +9,7 @@ import sys
 from torch.cuda.amp import autocast
 
 try:
-    from pwcnet.correlation import correlation # the custom cost volume layer
+    from BSRT.code.real.bsrt.pwcnet.correlation import correlation # the custom cost volume layer
 except:
     sys.path.insert(0, './correlation'); import correlation # you should consider upgrading python
 

@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.init as init
 import torch.nn.functional as F
-from model import common
-from model.utils.psconv import PSGConv2d as PSConv2d, PyConv2d
+from BSRT.code.synthetic.bsrt.model import common
+from BSRT.code.synthetic.bsrt.model.utils.psconv import PSGConv2d as PSConv2d, PyConv2d
 
 
 def initialize_weights(net_l, scale=1):

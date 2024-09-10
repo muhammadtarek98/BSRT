@@ -2,7 +2,7 @@ import os
 import torch
 import torch.nn.functional as F
 import random
-from .burstsr_dataset import SamsungRAWImage, flatten_raw_image, pack_raw_image
+from BSRT.code.synthetic.bsrt.datasets.burstsr_dataset import SamsungRAWImage, flatten_raw_image, pack_raw_image
 
 
 class BurstSRDataset(torch.utils.data.Dataset):

@@ -1,7 +1,7 @@
 import torch
 import numpy as np
 from PIL import Image
-from data_processing.synthetic_burst_generation import rgb2rawburst, random_crop #syn_burst_utils
+from BSRT.code.synthetic.bsrt.data_processing.synthetic_burst_generation import rgb2rawburst, random_crop #syn_burst_utils
 import torchvision.transforms as tfm
 
 

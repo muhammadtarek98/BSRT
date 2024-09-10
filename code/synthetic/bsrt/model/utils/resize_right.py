@@ -1,6 +1,6 @@
 import warnings
 from math import ceil
-import model.utils.interp_methods as interp_methods
+import BSRT.code.synthetic.bsrt.model.utils.interp_methods as interp_methods
 
 
 class NoneClass:
