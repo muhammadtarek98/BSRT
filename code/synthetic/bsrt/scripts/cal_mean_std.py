@@ -2,9 +2,9 @@ import torch
 import numpy as np
 from tqdm import tqdm
 
-from datasets.burstsr_dataset import BurstSRDataset, flatten_raw_image
-from datasets.synthetic_burst_train_set import SyntheticBurst
-from datasets.zurich_raw2rgb_dataset import ZurichRAW2RGB
+from BSRT.code.synthetic.bsrt.datasets.burstsr_dataset import BurstSRDataset, flatten_raw_image
+from BSRT.code.synthetic.bsrt.datasets.synthetic_burst_train_set import SyntheticBurst
+from BSRT.code.synthetic.bsrt.datasets.zurich_raw2rgb_dataset import ZurichRAW2RGB
 
 def main():
     train_zurich_raw2rgb = ZurichRAW2RGB(root='/data/dataset/ntire21/burstsr/synthetic', split='train')

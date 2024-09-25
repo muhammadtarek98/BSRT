@@ -3,8 +3,8 @@ import random
 import cv2
 import numpy as np
 import torch.nn.functional as F
-from data_processing.camera_pipeline import *
-from utils.data_format_utils import torch_to_numpy, numpy_to_torch
+from BSRT.code.synthetic.bsrt.data_processing.camera_pipeline import *
+from BSRT.code.synthetic.bsrt.utils.data_format_utils import torch_to_numpy, numpy_to_torch
 
 
 def random_crop(frames, crop_sz):

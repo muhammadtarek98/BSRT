@@ -1,4 +1,4 @@
-from model import common
+from BSRT.code.real.bsrt.model import common
 
 import torch.nn as nn
 

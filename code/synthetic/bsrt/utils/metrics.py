@@ -2,12 +2,12 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import utils.spatial_color_alignment as sca_utils
-from utils.spatial_color_alignment import get_gaussian_kernel, match_colors
-from utils.warp import warp
+import BSRT.code.synthetic.bsrt.utils.spatial_color_alignment as sca_utils
+from BSRT.code.synthetic.bsrt.utils.spatial_color_alignment import get_gaussian_kernel, match_colors
+from BSRT.code.synthetic.bsrt.utils.warp import warp
 from torch.cuda.amp import autocast
-from loss.Charbonnier import CharbonnierLoss as CBLoss
-from loss.mssim import MSSSIM
+from BSRT.code.synthetic.bsrt.loss.Charbonnier import CharbonnierLoss as CBLoss
+from BSRT.code.synthetic.bsrt.loss.mssim import MSSSIM
 from pytorch_msssim import ssim
 import lpips
 

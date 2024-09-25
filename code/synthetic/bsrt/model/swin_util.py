@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 # import torch.utils.checkpoint as checkpoint
-from model.checkpoint import CheckpointFunction as checkpoint
+from BSRT.code.synthetic.bsrt.model.checkpoint import CheckpointFunction as checkpoint
 from timm.models.layers import DropPath, to_2tuple, trunc_normal_
 from functools import reduce, lru_cache
 import time

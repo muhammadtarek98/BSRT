@@ -1,8 +1,8 @@
-import utility
+from BSRT.code.synthetic.bsrt import utility
 from types import SimpleNamespace
 
-from model import common
-from loss import discriminator
+from BSRT.code.synthetic.bsrt.model import common
+from BSRT.code.synthetic.bsrt.loss import discriminator
 
 import torch
 import torch.nn as nn

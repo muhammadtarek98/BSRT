@@ -1,7 +1,7 @@
 import torch.nn.functional as F
 from datasets.burstsr_dataset import BurstSRDataset
 from utils.metrics import AlignedPSNR
-from pwcnet.pwcnet import PWCNet
+from BSRT.code.real.bsrt.pwcnet.pwcnet import PWCNet
 
 root = '/data/dataset/ntire21/burstsr/real/NTIRE/burstsr_dataset'
 
